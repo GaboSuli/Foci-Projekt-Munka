@@ -44,6 +44,7 @@ body{
 .kezdes{
     width: 180px;
     font-size: 40px;
+    border-radius: 20px;
 }
 .cs{
     width: 500px;

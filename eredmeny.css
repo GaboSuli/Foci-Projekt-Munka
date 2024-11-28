@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.eredmeny{
+    width: 1459px;
+    height: 529px;
+    top: -278px;
+    left: -872px;
+    border: 5px;
+    border-radius: 10px;
+    background: #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    flex-direction: column;
+}
+body{
+    background-image: url(kezdo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color:gold;
+    text-align: center;
+    font-size: 40px;
+}
+.sor1{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    background-color: white;
+    height: 150px;
+}
+.sor2{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    background-color: white;
+    height: 100px;
+    margin-top: 30px;
+    align-items: center;
+    width: 800px;
+    justify-content: space-around;
+}
+p{
+    font-size: 60px;
+}
+.ujra{
+    margin-top: 30px;
+    width: 360px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgb(rgb(30, 111, 45), green, blue);
+}
