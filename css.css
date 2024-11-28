@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(kezdo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sor1{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 80px;
+}
+.sor2{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: white;
+    align-items: center;
+}
+.fi{
+    width: 180px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.kezdo{
+    width: 1459px;
+    height: 529px;
+    top: -278px;
+    left: -872px;
+    border: 5px;
+    background: #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    flex-direction: column;
+}
+.kezdes{
+    width: 180px;
+    font-size: 40px;
+}
+.cs{
+    width: 500px;
+    font-size: 60px;
+}
