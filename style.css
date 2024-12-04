@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fo{
+    width: 2000px;
+    height: 1500px;
+    top: -278px;
+    left: -872px;
+    border: 5px;
+    border-radius: 10px;
+    background: #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    flex-direction: column;
+}
+.kiallitott1{
+    background-color: black;
+}
+.kiallitott2{
+    background-color: black;
+}
