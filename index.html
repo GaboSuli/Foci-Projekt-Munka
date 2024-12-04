@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kezdo.css">
+    <link rel="stylesheet" href="eredmeny.css">
     <title>Eredményjelző</title>
 </head>
 <body>
-    <script src="js.js"></script>
+
+<!--kezdő oldal-->
+<section class="kezdo">
+    <div class="sor1">
+        <label for="csapat1" id="csapat1"></label>
+        <input placeholder="Hazai csapat" type="text" id="csapat1" class="cs">
+        <img src="projektkepek/vs.png" alt="">
+        <label for="csapat2" id="csapat2"></label>
+        <input placeholder=" Vendég csapat" type="text" id="csapat2" class="cs">
+    </div>
+    <div class="sor2">
+        <label for="felido" id="felido">Félidő hossza</label>
+        <input type="number" id="felido" class="fi" placeholder="perc" min="1" max="45">
+        <button type="button" id="submit" class="kezdes">Kezdés</button>
+    </div>
+</section>
+
+    <!--eredmény oldal-->
+<section class="eredmeny">
+    <h1>"Győztes csapat neve"</h1>
+    <div class="sor3">
+        <h2>"hazai csapat neve"</h2>
+        <img src="projektkepek/vs.png" alt="">
+        <h2>"vendeg csapat neve"</h2>
+    </div>
+    <div class="sor4">
+        <p>"hazai gol"</p>
+        <p>:</p>
+        <p>"vendeg gol"</p>
+    </div>
+    <button type="button" id="restrat" class="ujra">Következő mérkőzés</button>
+</section>
+
+<script src="js.js"></script>
+
 </body>
 </html>

@@ -28,14 +28,14 @@ h1{
     text-align: center;
     font-size: 40px;
 }
-.sor1{
+.sor3{
     display: flex;
     justify-content: space-evenly;
     font-size: 40px;
     background-color: white;
     height: 150px;
 }
-.sor2{
+.sor4{
     display: flex;
     justify-content: space-evenly;
     font-size: 40px;
