@@ -12,15 +12,32 @@
     border-radius: 10px;
     background: #00000060;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-top: 200px;
-    flex-direction: column;
+    flex-direction: row;
 }
 .kiallitott1{
-    background-color: black;
+    display: flex;
+    background-color: white;
+    width: 500px;
+    height: 1450px;
+    margin-left: 25px;
 }
 .kiallitott2{
-    background-color: black;
+    display: flex;
+    background-color:white;
+    width: 500px;
+    height: 1450px;
+    margin-right: 25px;
+}
+.kozep{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 1000px;
+}
+h2{
+    font-size: 80px;
 }
