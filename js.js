@@ -1,4 +1,4 @@
-/*const kezdooldal = document.getElementById("kezdo")
+const kezdooldal = document.getElementById("kezdo")
 const futamoldal = document.getElementById("fo")
 const eredmenyoldal = document.getElementById("eredmeny")
 const csapat1neveh = document.getElementById("hazaicsapatneve")
@@ -33,7 +33,7 @@ function adatbeadas()
     document.getElementById("csapat2neve").innerText = csapat2neve
     document.getElementById("idohatra").innerText = (Math.floor(elteltido / 60) + ":" + elteltido % 60)
     kezdooldal.style.visibility = "hidden"
-    futamoldal.style.visibility = "visible"*
+    futamoldal.style.visibility = "visible"*/
 }
 function vegeredmeny()
 {
@@ -52,4 +52,4 @@ function restart()
     eredmenyoldal.style.height = "0px"
     kezdooldal.style.visibility = "visible"
     kezdooldal.style.height = originalheighte
-}*/
+}

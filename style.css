@@ -1,43 +1,92 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 5px;
     box-sizing: border-box;
 }
-.fo{
-    width: 2000px;
-    height: 1500px;
-    top: -278px;
-    left: -872px;
-    border: 5px;
-    border-radius: 10px;
+.main{
     background: #00000060;
+    color: white;
+    text-align: center;
+    font-size: 24px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    margin-top: 200px;
+    margin-top: 20px;
+    flex: 1;
     flex-direction: row;
+    border-radius: 3%;
 }
 .kiallitott1{
     display: flex;
+    flex-direction: column;
     background-color: white;
-    width: 500px;
-    height: 1450px;
-    margin-left: 25px;
+    padding: 3em 0 3em 0;
+    color: black;
+    flex: 2 2 100px;
+    margin-right: 20px;
 }
 .kiallitott2{
     display: flex;
+    flex-direction: column;
     background-color:white;
-    width: 500px;
-    height: 1450px;
-    margin-right: 25px;
+    padding: 3em 0 3em 0;
+    color: black;
+    flex: 2 2 100px;
+    margin-left: 20px;
 }
 .kozep{
     display: flex;
     background-color: white;
-    flex-direction: column;
-    width: 1000px;
+    padding:  3em 0 3em 0;
+    flex: 5 5 150px;
 }
 h2{
     font-size: 80px;
+}
+header{
+    background-color: #00000060;
+    padding: 2em 0 2em 0;
+}
+footer{
+    background-color: #00000060;
+    padding: 2em 0 2em 0;
+}
+.body{
+    height:80vh;
+    background-color: #00000060;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 70%;
+    border-radius: 3%;
+}
+.sor{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.golszam{
+    background-color: white;
+    color: black;
+    font-size: 500%;
+    width: 5%;
+}
+.gomb{
+    width: 30%;
+    height: 300%;
+    font-size: 300%;
+    border-radius: 20px;
+}
+hr{
+    color: black;
+    height: 4px;
+}
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
 }
