@@ -14,42 +14,42 @@
 <section class="kezdo" id="kezdo">
     <div class="sor1">
         <label for="csapat1" id="csapat1label"></label>
-        <input placeholder="Hazai csapat" type="text" id="csapat1" class="cs">
+        <input placeholder="Hazai csapat" type="text" id="csapat1" class="cs" onchange="bekapcsolas()">
         <img src="projektkepek/vs.png" alt="">
         <label for="csapat2" id="csapat2label"></label>
-        <input placeholder=" Vendég csapat" type="text" id="csapat2" class="cs">
+        <input placeholder="Vendég csapat" type="text" id="csapat2" class="cs" onchange="bekapcsolas()">
     </div>
     <div class="sor2">
-        <label for="felido" id="felido">Félidő hossza</label>
-        <input type="number" id="felido" class="fi" placeholder="perc" min="1" max="45">
-        <button type="button" id="submit" class="kezdes" onclick="adatbeadas()">Kezdés</button>
+        <label for="felido" id="felidolabel">Félidő hossza</label>
+        <input type="number" id="felido" class="fi" placeholder="perc" min="1" max="45" onchange="bekapcsolas()">
+        <button type="button" id="submit" class="kezdes" onclick="adatbeadas()" disabled>Kezdés</button>
     </div>
 </section>
 
 <!--főoldal-->
-<main class="body">
+<main class="body" id="fo">
 <header>
     <section class="eloeredmeny" id="eloeredmeny">
         <div class="sor">
-            <h2>"hazai csapat"</h2>
-            <button type="button" id="h_plus" class="plus">+</button>
-            <p class="golszam">7</p><!--hazai_gol-->
-            <button type="button" id="h_minus" class="minus">-</button>
+            <h2 id="hazaicsapatnevejatek">"hazai csapat"</h2>
+            <button type="button" id="h_plus" class="plus" onclick="golplusz1()">+</button>
+            <p class="golszam" id="csapat1golszam">0</p><!--hazai_gol-->
+            <button type="button" id="h_minus" class="minus" onclick="golminusz1()">-</button>
             <img src="projektkepek/vs.png" alt="">
-            <button type="button" id="v_plus" class="plus">+</button>
-            <p class="golszam">3</p><!--vendeg_gol-->
-            <button type="button" id="h_minus" class="minus">-</button>
-            <h2>"vendegcsapat"</h2>
+            <button type="button" id="v_plus" class="plus" onclick="golplusz2()">+</button>
+            <p class="golszam" id="csapat2golszam">0</p><!--vendeg_gol-->
+            <button type="button" id="v_minus" class="minus" onclick="golminusz2()">-</button>
+            <h2 id="vendegcsapatnevejatek">"vendegcsapat"</h2>
         </div>
         <div class="sor_2">
-            <p class="ido">13:45</p><!--ido-->
+            <p class="ido" id="idomutato">00:00</p><!--ido-->
         </div>
         </section>
 </header>
     <div class="main" id="main">
         <div class="kiallitott1">
             <h2>Kiállított Hazai játékosok</h2><hr>
-            <p class="kiallitott">ehetrhgehger</p>
+            <p class="kiallitott">ehetrhgehger</p> <!--ezeknél adhatnál bordert a kiallitott jatekosoknak hogy konnyebben lehet tudni hogy tobb van és nem csak 1 paragrafus -->
             <p class="kiallitott">wFWefwFWef</p>
             <p class="kiallitott">fWFEwf</p>
             <p class="kiallitott">ztrjtrjtrzj</p>
@@ -74,28 +74,28 @@
         </div>
         <div class="kiallitott2">
             <h2>Kiállított Vendég játékosok</h2><hr>
-            <p class="kiallitott">fwfwfwsfesf</p>
+            <p class="kiallitott">fwfwfwsfesf</p> 
             <p class="kiallitott">hwrthwrhhrwth</p>
             <p class="kiallitott">gqwergqwg</p>
             <p class="kiallitott">qregeqgegeq</p>
         </div>
     </div>
 <footer>
-    <button class="gomb" type="button" onclick="vegeredmeny()">Tovább</button>
+    <button class="gomb" type="button" id="tovabb" onclick="vegeredmeny()" disabled>Tovább</button>
 </footer>
 </main>
 <!--eredmény oldal-->
 <section class="eredmeny" id="eredmeny">
-    <h1>"Győztes csapat neve"</h1>
+    <h1 id="gyoztescsapat">"Győztes csapat neve"</h1>
     <div class="sor3">
         <h2 id="hazaicsapatneve">"hazai csapat neve"</h2>
         <img src="projektkepek/vs.png" alt="">
         <h2 id="vendegcsapatneve">"vendeg csapat neve"</h2>
     </div>
     <div class="sor4">
-        <p>"hazai gol"</p>
+        <p id="hazaigolvege">"hazai gol"</p>
         <p>:</p>
-        <p>"vendeg gol"</p>
+        <p id="vendeggolvege">"vendeg gol"</p>
     </div>
     <button type="button" id="restart" class="ujra" onclick="restart()">Következő mérkőzés</button>
 </section>
