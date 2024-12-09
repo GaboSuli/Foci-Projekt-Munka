@@ -58,13 +58,13 @@
             <div class="idobealliatas">
                 <label for="hosszabitas" id="hosszabitas">Hosszabítás</label>
                 <input type="number" id="hosszabbitas" class="hosszabitas" placeholder="perc" min="1" max="15">
-                <button type="button" id="hosszabbotas" class="hosszabitas" onclick="hosszabitas()">Hozzáadás</button>
+                <button type="button" id="hosszabbotas" class="hossz_gomb" onclick="hosszabitas()">Hozzáadás</button>
             </div>
             <div class="kiallitas" >
                 <h3>Játékos kiállítás</h3><hr>
-                <label for="kiallit" class="kiallit">Csapat</label>
                 <select>
-                    <option value="home">"hazai"</option>
+                    <option value="0" aria-placeholder="Csapat">Csapat</option>
+                    <option value="home" aria-placeholder="Csapat">"hazai"</option>
                     <option value="away">"vendeg"</option>
                 </select>
                 <label for="kiallitott" id="kialitott"></label>
@@ -88,9 +88,9 @@
 <section class="eredmeny" id="eredmeny">
     <h1 id="gyoztescsapat">"Győztes csapat neve"</h1>
     <div class="sor3">
-        <h2 id="hazaicsapatneve">"hazai csapat neve"</h2>
+        <h2 id="hazaicsapatneve" class="eredmeny_csnev">"hazai csapat neve"</h2>
         <img src="projektkepek/vs.png" alt="">
-        <h2 id="vendegcsapatneve">"vendeg csapat neve"</h2>
+        <h2 id="vendegcsapatneve" class="eredmeny_csnev">"vendeg csapat neve"</h2>
     </div>
     <div class="sor4">
         <p id="hazaigolvege">"hazai gol"</p>

@@ -104,7 +104,7 @@ function vegeredmeny()
     else if (csapat2golszam > csapat1golszam)
         document.getElementById("gyoztescsapat").innerText = "A gyöztes csapat: "+csapat2neve
     else
-        document.getElementById("gyoztescsapat").innerText = "Döntetlen lett."
+        document.getElementById("gyoztescsapat").innerText = "Döntetlen"
     document.getElementById("hazaigolvege").innerText = csapat1golszam
     document.getElementById("vendeggolvege").innerText = csapat2golszam
     csapat1neveh.innerText = csapat1neve

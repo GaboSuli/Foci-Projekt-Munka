@@ -6,7 +6,7 @@
     background: #00000060;
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 50%;
     display: flex;
     margin-top: 20px;
     flex: 1;
@@ -19,7 +19,7 @@
     padding: 3em 0 3em 0;
     color: black;
     flex: 2 2 100px;
-    margin-right: 20px;
+    margin-right: 0.5%;
 }
 .kiallitott2{
     display: flex;
@@ -28,7 +28,7 @@
     padding: 3em 0 3em 0;
     color: black;
     flex: 2 2 100px;
-    margin-left: 20px;
+    margin-left: 0.5%;
 }
 .kozep{
     display: flex;
@@ -38,11 +38,14 @@
     color: black;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 h2{
-    font-size: 80px;
+    font-size: 700%;
+}
+.eredmeny_csnev{
+    font-size: 250%;
 }
 header{
     background-color: #00000060;
@@ -57,12 +60,11 @@ footer{
     background-color: #00000060;
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 125%;
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 50px;
-    max-width: 70%;
+    max-width: 95%;
 }
 .sor{
     align-items: center;
@@ -73,7 +75,7 @@ footer{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1%;
 }
 .golszam{
     background-color: white;
@@ -88,8 +90,8 @@ footer{
     border-radius: 20px;
 }
 hr{
-    color: black;
-    height: 4px;
+    color: black,3%;
+    height: 2%;
 }
 .ido{
     background-color: white;
@@ -99,29 +101,47 @@ hr{
     text-align: center;
 }
 .plus{
-    width: 100px;
+    width: 2.5%;
     height: 100px;
     font-size: 40px;
-    margin-right: -200px;
+    margin-right: -5.5%;
 }
 .minus{
-    width: 100px;
+    width: 2.5%;
     height: 100px;
     font-size: 40px;
-    margin-left: -200px;
+    margin-left: -5.5%;
 }
-.idobeallitas{
+
+
+
+
+.idobealliatas{
     display: flex;
-    height: 200px;
+    width: 30%;
+    font-size: 600%;
+    flex-direction: column;
+    text-align: center;
+}
+.hosszabitas{
+    font-size: 70%;
+    text-align: center;
+}
+.hossz_gomb{
+    font-size: 50%;
     width: 50%;
-    font-size: 40px;
+    text-align: center;
 }
 .kiallitas{
+    font-size: 250%;
     display: flex;
     height: 15%;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20%;
+    text-align: center;
 }
+
 option,select{
     height: 80%;
     font-size: 40px;
