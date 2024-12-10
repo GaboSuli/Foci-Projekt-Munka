@@ -20,6 +20,7 @@
     color: black;
     flex: 2 2 100px;
     margin-right: 0.5%;
+    margin-left: 0.5%;
 }
 .kiallitott2{
     display: flex;
@@ -29,6 +30,8 @@
     color: black;
     flex: 2 2 100px;
     margin-left: 0.5%;
+    margin-right: 0.5%;
+
 }
 .kozep{
     display: flex;
@@ -122,15 +125,18 @@ hr{
     font-size: 600%;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 10%;
 }
 .hosszabitas{
     font-size: 70%;
     text-align: center;
 }
 .hossz_gomb{
-    font-size: 50%;
+    font-size: 80%;
     width: 50%;
     text-align: center;
+    margin: auto;
+    margin-top: 3%;
 }
 .kiallitas{
     font-size: 250%;
@@ -168,6 +174,22 @@ option,select{
 }
 h3{
     font-size: 300%;
+}
+.pause{
+    color: black;
+    background-color: white;
+    margin-right: 1%;
+    width: 2%;
+    height: 80px;
+    font-size: 200%;
+}
+.play{
+    color: black;
+    background-color: white;
+    margin-left: 1%;
+    width: 2%;
+    height: 80px;
+    font-size: 200%;
 }
 @media all and (max-width: 550px){
     .main{
