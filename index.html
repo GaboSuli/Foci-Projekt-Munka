@@ -32,57 +32,57 @@
     <section class="eloeredmeny" id="eloeredmeny">
         <div class="sor">
             <h2 id="hazaicsapatnevejatek">"hazai csapat"</h2>
-            <button type="button" id="h_plus" class="plus" onclick="golplusz1()">+</button>
+            <button type="button" id="hplusz" class="plus" onclick="golplusz1()">+</button>
             <p class="golszam" id="csapat1golszam">0</p><!--hazai_gol-->
-            <button type="button" id="h_minus" class="minus" onclick="golminusz1()">-</button>
+            <button type="button" id="hminusz" class="minus" onclick="golminusz1()">-</button>
             <img src="projektkepek/vs.png" alt="">
-            <button type="button" id="v_plus" class="plus" onclick="golplusz2()">+</button>
+            <button type="button" id="vplusz" class="plus" onclick="golplusz2()">+</button>
             <p class="golszam" id="csapat2golszam">0</p><!--vendeg_gol-->
-            <button type="button" id="v_minus" class="minus" onclick="golminusz2()">-</button>
+            <button type="button" id="vminusz" class="minus" onclick="golminusz2()">-</button>
             <h2 id="vendegcsapatnevejatek">"vendegcsapat"</h2>
         </div>
         <div class="sor_2">
-            <button type="button" class="pause">||</button>
+            <button type="button" class="pause" onclick="idostop()" id="stopgomb">||</button>
             <p class="ido" id="idomutato">00:00</p><!--előre felé kellne számolnia-->
-            <button type="button" class="play">▶</button>
+            <button type="button" class="play" onclick="idostart()" id="startgomb" disabled>▶</button>
         </div>
         <div class="sor_3">
-            <p class="extratime">3:00</p><!--csak akkor jelenjen meg ha megadta a hosszabítást,és visszavele számoljon-->
+            <p class="extratime" id="extraido" style="visibility: hidden;">3:00</p><!--csak akkor jelenjen meg ha megadta a hosszabítást,és visszavele számoljon-->
         </div>
         </section>
 </header>
     <div class="main" id="main">
-        <div class="kiallitott1">
+        <div class="kiallitott1" >
             <h2>Kiállított Hazai játékosok</h2><hr>
-            <p class="kiallitott">ehetrhgehger</p> <!--ezeknél adhatnál bordert a kiallitott jatekosoknak hogy konnyebben lehet tudni hogy tobb van és nem csak 1 paragrafus -->
-            <p class="kiallitott">wFWefwFWef</p>
-            <p class="kiallitott">fWFEwf</p>
-            <p class="kiallitott">ztrjtrjtrzj</p>
+            <div id="csapat1kiallitott">
+                <p class="kiallitott">wFWefwFWef</p>
+                <p class="kiallitott">fWFEwf</p>
+                <p class="kiallitott">ztrjtrjtrzj</p>
+            </div>
         </div>
         <div class="kozep">
             <div class="idobealliatas">
                 <label for="hosszabitas" id="hosszabitas">Hosszabítás</label>
-                <input type="number" id="hosszabbitas" class="hosszabitas" placeholder="perc" min="1" max="15">
-                <button type="button" id="hosszabbotas" class="hossz_gomb" onclick="hosszabitas()">Hozzáadás</button>
+                <input type="number" id="hosszabbitasinput" class="hosszabitas" placeholder="perc" min="1" max="15">
+                <button type="button" id="hosszabbitogomb" class="hossz_gomb" onclick="hosszabbitas()">Hozzáadás</button>
             </div>
             <div class="kiallitas" >
                 <h3>Játékos kiállítás</h3><hr>
-                <select>
-                    <option value="0" aria-placeholder="Csapat">Csapat</option>
-                    <option value="home" aria-placeholder="Csapat">"hazai"</option>
-                    <option value="away">"vendeg"</option>
+                <select id="csapatokselect">
+                    
                 </select>
                 <label for="kiallitott" id="kialitott"></label>
-                <input placeholder="Játékos neve" type="text" id="kiallitott" class="nev">
-                <button type="button" class="kiallitgomb">Kiállítás</button>
+                <input placeholder="Játékos neve" type="text" id="kiallitottinput" class="nev">
+                <button type="button" class="kiallitgomb" id="kiallitasgomb" onclick="kiallitas()">Kiállítás</button>
             </div>
         </div>
         <div class="kiallitott2">
             <h2>Kiállított Vendég játékosok</h2><hr>
-            <p class="kiallitott">fwfwfwsfesf</p> 
-            <p class="kiallitott">hwrthwrhhrwth</p>
-            <p class="kiallitott">gqwergqwg</p>
-            <p class="kiallitott">qregeqgegeq</p>
+            <div id="csapat2kiallitott">
+                <p class="kiallitott">wFWefwFWef</p>
+                <p class="kiallitott">fWFEwf</p>
+                <p class="kiallitott">ztrjtrjtrzj</p>
+            </div>
         </div>
     </div>
 <footer>
