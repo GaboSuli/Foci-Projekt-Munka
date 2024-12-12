@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 .main{
-    background: #00000060;
+    background: #0000007b;
     color: white;
     text-align: center;
     font-size: 30%;
@@ -11,6 +11,7 @@
     margin-top: 20px;
     flex: 1;
     flex-direction: row;
+    padding: 2.5%;
 }
 .kiallitott1{
     display: flex;
@@ -59,7 +60,7 @@ h2{
     font-size: 250%;
 }
 header{
-    background-color: #00000060;
+    background: #0000007b;
     padding: 0.5em 0 0.5em 0;
 }
 footer{
@@ -148,21 +149,22 @@ footer{
     align-items: center;
     margin-bottom: 20%;
     text-align: center;
+    color: white;
 }
 
 option,select{
     height: 80%;
     font-size: 120%;
-    width: 100%;
+    width: 60%;
 }
 .nev{
-    width: 100%;
+    width: 60%;
     height: 80%;
     font-size: 200%;
     margin-top: 20px;
 }
 .kiallit{
-    width: 100%;
+    width: 80%;
     height: 100%;
     font-size: 250%;
 }
@@ -174,8 +176,13 @@ option,select{
     border-radius: 3px;
 
 }
+.kiallitott{
+    font-size: 500%;
+    color: white;
+}
 h3{
-    font-size: 300%;
+    font-size: 100%;
+    color: white;
 }
 .pause{
     color: black;
@@ -192,6 +199,9 @@ h3{
     width: 3%;
     height: 10%;
     font-size: 200%;
+}
+.vlmi{
+    font-size: 100%;
 }
 @media all and (max-width: 550px){
     .main{
