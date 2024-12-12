@@ -1,12 +1,12 @@
 *{
-    margin: 5px;
+    margin: 0px;
     box-sizing: border-box;
 }
 .main{
     background: #00000060;
     color: white;
     text-align: center;
-    font-size: 50%;
+    font-size: 30%;
     display: flex;
     margin-top: 20px;
     flex: 1;
@@ -21,6 +21,9 @@
     flex: 2 2 100px;
     margin-right: 0.5%;
     margin-left: 0.5%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
 }
 .kiallitott2{
     display: flex;
@@ -31,6 +34,9 @@
     flex: 2 2 100px;
     margin-left: 0.5%;
     margin-right: 0.5%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color:white;
 
 }
 .kozep{
@@ -43,24 +49,24 @@
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.788)
 }
 h2{
-    font-size: 700%;
+    font-size: 3rem;
 }
 .eredmeny_csnev{
     font-size: 250%;
 }
 header{
     background-color: #00000060;
-    padding: 2em 0 2em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 footer{
-    background-color: #00000060;
     padding: 2em 0 2em 0;
 }
 .body{
-    height:80vh;
-    background-color: #00000060;
+    height:60vh;
     text-align: center;
     color: white;
     font-size: 125%;
@@ -87,14 +93,10 @@ footer{
     width: 5%;
 }
 .gomb{
-    width: 30%;
+    width: 15%;
     height: 300%;
-    font-size: 300%;
+    font-size: 150%;
     border-radius: 20px;
-}
-hr{
-    color: black,3%;
-    height: 2%;
 }
 .ido{
     background-color: white;
@@ -105,13 +107,13 @@ hr{
 }
 .plus{
     width: 2.5%;
-    height: 100px;
+    height: 15%;
     font-size: 40px;
     margin-right: -5.5%;
 }
 .minus{
     width: 2.5%;
-    height: 100px;
+    height: 15%;
     font-size: 40px;
     margin-left: -5.5%;
 }
@@ -133,7 +135,7 @@ hr{
 }
 .hossz_gomb{
     font-size: 80%;
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: auto;
     margin-top: 3%;
@@ -150,7 +152,7 @@ hr{
 
 option,select{
     height: 80%;
-    font-size: 40px;
+    font-size: 120%;
     width: 100%;
 }
 .nev{
@@ -165,8 +167,8 @@ option,select{
     font-size: 250%;
 }
 .kiallitgomb{
-    width: 30%;
-    height: 70px;
+    width: 60%;
+    height: 5em;
     margin-top: 20px;
     font-size: 200%;
     border-radius: 3px;
@@ -179,16 +181,16 @@ h3{
     color: black;
     background-color: white;
     margin-right: 1%;
-    width: 2%;
-    height: 80px;
+    width: 3%;
+    height: 10%;
     font-size: 200%;
 }
 .play{
     color: black;
     background-color: white;
     margin-left: 1%;
-    width: 2%;
-    height: 80px;
+    width: 3%;
+    height: 10%;
     font-size: 200%;
 }
 @media all and (max-width: 550px){
@@ -196,6 +198,6 @@ h3{
         flex-direction: column;
     }
     main{
-        padding: 5em 0 5em 0;
+        padding: 2em 0 2em 0;
     }
 }
