@@ -56,6 +56,10 @@
 h2{
     font-size: 3rem;
 }
+.csnevek{
+    width: 8%;
+    font-size: 300%;
+}
 .eredmeny_csnev{
     font-size: 250%;
 }
@@ -201,7 +205,10 @@ h3{
     font-size: 200%;
 }
 .vlmi{
-    font-size: 100%;
+    font-size: 300%;
+}
+.asd{
+    font-size: 150%;
 }
 @media all and (max-width: 550px){
     .main{
