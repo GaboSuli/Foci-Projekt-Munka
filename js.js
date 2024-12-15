@@ -23,6 +23,15 @@ const vminusz = document.getElementById("vminusz")
 const vplusz = document.getElementById("vplusz")
 const kiallitasgomb = document.getElementById("kiallitasgomb")
 const hosszabbitogomb = document.getElementById("hosszabbitogomb")
+class kiallitottemberke 
+{
+    constructor(idohatra,spanid,objektumid)
+    {
+        this.idohatra = idohatra
+        this.spanid = spanid
+        this.objektumid = objektumid
+    }
+}
 let originalheightf = futamoldal.style.height
 let originalheightk = kezdooldal.style.height
 let originalheighte = eredmenyoldal.style.height
@@ -35,11 +44,31 @@ let ido
 let elteltido
 let szamolo
 let bonuszido = 0
+let kiallitottemberek = []
+let bonuszidoben = false
 futamoldal.style.visibility = "hidden"
 eredmenyoldal.style.visibility = "hidden"
 futamoldal.style.height = "0px"
 eredmenyoldal.style.height = "0px"
 submitgomb.disabled = true
+let go = setInterval(leszamolas,1000)
+function leszamolas()
+{
+    for (let index = 0; index < kiallitottemberek.length; index++) {
+        if (kiallitottemberek[index].idohatra <= 0)
+        {
+            let temp = document.getElementById(kiallitottemberek[index].objektumid)
+            temp.parentNode.removeChild(document.getElementById(temp))
+            kiallitottemberek.splice(index,1)
+        }
+        else
+        {
+            kiallitottemberek[index].idohatra--
+            let number = kiallitottemberek[index].idohatra
+            document.getElementById(kiallitottemberek[index].spanid).innerText = " "+Math.floor(number/60)+":"+number%60
+        }
+    }
+}
 function adatbeadas()
 {
     futamoldal.style.visibility = "visible"
@@ -99,16 +128,26 @@ function restart()
     kezdooldal.style.height = originalheighte
     extraido.style.visibility = "hidden"
     bonuszido = 0
+    bonuszidoben = false
 }
 function idostop()
 {
     clearInterval(szamolo)
+    clearInterval(go)
     startgomb.disabled = false
     stopgomb.disabled = true
 }
 function idostart()
 {
-    szamolo = setInterval(idofelfele,1000)
+    if (bonuszidoben == true)
+    {
+        szamolo = setInterval(idolefele,1000)
+    }
+    else
+    {
+        szamolo = setInterval(idofelfele,1000)
+    }
+    go = setInterval(leszamolas,1000)
     startgomb.disabled = true
     stopgomb.disabled = false
 }
@@ -117,12 +156,14 @@ function kiallitas()
     let input = kiallitottinput.value
     if (csapatokselect.value == "csapat1" && input != "")
     {
-        csapat1kiallitottak.innerHTML += "<p class='kiallitott'>"+input+"</p>"
+        csapat1kiallitottak.innerHTML += "<p class='kiallitott' id='"+input+"'>"+input+"<span id='"+input+"span'>2:00</p>"
+        kiallitottemberek.push(new kiallitottemberke(120,input+"span",input))
         kiallitottinput.value = ""
     }
     else if (csapatokselect.value == "csapat2" && input != "")
     {
-        csapat2kiallitottak.innerHTML += "<p class='kiallitott'>"+input+"</p>"
+        csapat2kiallitottak.innerHTML += "<p class='kiallitott' id='"+input+"'>"+input+"<span id='"+input+"span'>2:00</p>"
+        kiallitottemberek.push(new kiallitottemberke(120,input+"span",input))
         kiallitottinput.value = ""
     }
 }
@@ -171,6 +212,7 @@ function idofelfele()
         if (bonuszido > 0)
         {
             szamolo = setInterval(idolefele,1000)
+            bonuszidoben = true
             extraido.style.visibility = "visible"
             extraido.innerText = Math.floor(bonuszido/60)+":"+bonuszido%60
         }
@@ -201,6 +243,7 @@ function idolefele()
         kiallitasgomb.disabled = true
         submitgomb.disabled = false
     }
+    
 }
 function hosszabbitas()
 {
